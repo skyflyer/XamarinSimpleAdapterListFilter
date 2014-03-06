@@ -52,10 +52,10 @@ namespace ListViewFilter
 			string[] names = new string[] { "Ljubljana	280,000", "Maribor	130,000", "Celje	56,000", "Kranj	52,000", "Novo Mesto	48,000", "Nova Gorica	45,000", "Koper/Capodistria	42,000", "Velenje	32,000", "Domžale	30,000", "Ptuj	25,000", "Murska Sobota	22,000", "Jesenice	20,000", "Trbovlje	16,000", "Kamnik	15,000", "Škofja Loka	12,000", "Izola/Isola	11,000" };
 			Random r = new Random ();
 			List<string> res = new List<string> ();
-			for (int i = 0; i < 1000; i++) {
+			for (int i = 0; i < 300; i++) {
 				res.Add (names [r.Next (names.Length)]);
 			}
-			return names.ToArray ();
+			return res.ToArray ();
 		}
 	}
 
